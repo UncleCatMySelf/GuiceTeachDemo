@@ -12,6 +12,11 @@
 <h4>Master Branch</h4>
 <p>Deduce the dependency injection under no guice, through the Hello World case to transform to realize object-oriented, eliminate dependency. The classic Hello World core algorithm? Outputs the specified content to the specified destination. I get rid of the Hello World function through object class and interface abstraction, and become dependency injection. First understanding of the master branch of the original demo will help you a lot more oh.</p>
 
+<h4>master-guice分支</h4>
+<p>此分支是通过Guice配置实现Master示例中的HelloWorldDemo，通过继承AbstractModule，实现configure配置，使用注解@Inject告诉Guice依赖注入</p>
+<h4>Master-Guice Branch</h4>
+<p>This branch implements the Helloworlddemo in the master example through the Guice configuration, implements configure configuration by inheriting Abstractmodule, uses annotations @inject tells Guice dependency Injection</p>
+
 <h4>作者：UncleCatMySelf</h4>
 <h4>email：zhupeijie_java@126.com</h4>
 <h5>有什么问题，欢迎联系QQ：1341933031</h5>
