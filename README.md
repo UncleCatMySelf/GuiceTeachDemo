@@ -5,7 +5,7 @@
 <p>Guice不同于Spring：取消xml、取消Bean的概念、使用Constructor来注入、泛型支持、一个专注于Dependency Injection的开源框架</p>
 
 <p>This demo will lead you through Google Guice to learn about the binding, injection, lifecycle, and AOP techniques in Di's mind. and demonstrate how guice and spring boot collaborate. For those of you who are familiar with spring, you can learn about the similarities and differences and deepen your understanding of Di and spring after you finish this demo.</p>
-<p>Guice不同于Spring：取消xml、取消Bean的概念、使用Constructor来注入、泛型支持、一个专注于Dependency Injection的开源框架</p>
+<p>Guice is different from spring: Canceling XML, canceling the concept of beans, injecting with constructor, generics support, an open source framework focused on dependency injection</p>
 
 <h4>master分支</h4>
 <p>演绎无Guice下的Dependency Injection，通过Hello World案例来改造实现面向对象化，消除Dependency。经典的Hello World的核心算法？将指定内容输出至指定目标。我通过对象类及接口抽象将Hello World功能脱离出来，成为依赖注入。先理解master分支的原生demo对你的帮助将更大哦。</p>
