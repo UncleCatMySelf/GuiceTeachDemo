@@ -2,6 +2,7 @@ package com.myself.guice;
 
 import com.google.inject.AbstractModule;
 import com.myself.guice.helloworlddemo.HelloWorldModule;
+import com.myself.guice.printlndemo.PrintLineModule;
 
 /**
  * @Author:UncleCatMySelf
@@ -14,6 +15,7 @@ public class MainModule extends AbstractModule{
     @Override
     protected void configure() {
         install(new HelloWorldModule());
+        install(new PrintLineModule());
     }
 
 }
