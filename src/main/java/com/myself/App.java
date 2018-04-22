@@ -1,7 +1,10 @@
 package com.myself;
 
-import com.myself.guice.Configuration;
+import com.google.inject.Guice;
+import com.myself.guice.MainModule;
 import com.myself.guice.MyApplet;
+
+import javax.security.auth.login.Configuration;
 
 public class App {
 
@@ -13,10 +16,7 @@ public class App {
      * @param args
      */
     public static void main( String[] args ) {
-        // There is still dependency on HelloWorldPrinter.
-        // 依然对HelloWorldPrinter存在依赖
-        // HelloWorldPrinter mainApplet = Configuration.gerMainApplet();
-        MyApplet mainApplet = Configuration.gerMainApplet();
-        Configuration.gerMainApplet().run();
+        MyApplet mainApplet = Guice.createInjector(new MainModule()).getInstance(MyApplet.class);
+        mainApplet.run();
     }
 }

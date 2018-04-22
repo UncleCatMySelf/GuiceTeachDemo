@@ -3,6 +3,7 @@ package com.myself.guice.helloworlddemo;
 import com.google.inject.Provider;
 import com.myself.guice.MyApplet;
 
+import javax.inject.Inject;
 
 
 /**
@@ -14,9 +15,10 @@ import com.myself.guice.MyApplet;
 public class StringWritingApplet implements MyApplet{
 
     private MyDestination destination;
-    private StringProvider stringProvider;
+    private Provider<String> stringProvider;
 
-    public StringWritingApplet(MyDestination destination, StringProvider stringProvider) {
+    @Inject
+    public StringWritingApplet(MyDestination destination, @Output Provider<String> stringProvider) {
         super();
         this.destination = destination;
         this.stringProvider = stringProvider;
