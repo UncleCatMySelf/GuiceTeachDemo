@@ -17,6 +17,12 @@
 <h4>Master-Guice Branch</h4>
 <p>This branch implements the Helloworlddemo in the master example through the Guice configuration, implements configure configuration by inheriting Abstractmodule, uses annotations @inject tells Guice dependency Injection</p>
 
+<h4>related分支</h4>
+<p>此分支主要讲解Guice的注入（构造函数、成员变量），构造函数注入：使用final来区分dependency和状态，注入时不要考虑如何实现或绑定、成员变量注入：用于测试、使用injectMembers来注入测试用例、命名注入；绑定：类名绑定、实例绑定、连接绑定、Provider绑定、命名绑定、泛型绑定、集合绑定；选择作用域：默认（一般实例，stateless，构造速度快）、Singleton（Stateful的实例、构造速度慢的实例、必须线程安全）、Session/Request（含有session/request信息的实例、stateful的实例），及Guice AOP的相关介绍</p>
+<h4>Related Branch</h4>
+<p>This branch focuses on Guice injection (constructors, member variables), constructor injection: Use final to distinguish between dependency and state, and do not consider how to implement or bind, member variable injection when injected: for testing, using injectmembers to inject test cases, Named injection; binding: Class name bindings, instance bindings, connection bindings, provider bindings, named bindings, generic bindings, collection bindings, selection scopes: Default (General instance, stateless, fast construction), Singleton (instance of stateful, slow construction) , must be thread safe), Session/request (instances with session/request information, stateful instances), and Guice AOP related introduction</p>
+
+
 <h4>作者：UncleCatMySelf</h4>
 <h4>email：zhupeijie_java@126.com</h4>
 <h5>有什么问题，欢迎联系QQ：1341933031</h5>
